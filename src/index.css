@@ -1,0 +1,2677 @@
+@font-face {
+  font-family: 'NotoSansKr-Light';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans Light'), local('NotoSans-Light'), url(/NotoSans-Light.eot);
+  src: url(/NotoSans-Light.eot?#iefix) format('embedded-opentype'),
+  url(/NotoSans-Light.woff2) format('woff2'),
+  url(/NotoSans-Light.woff) format('woff');
+}
+@font-face {
+  font-family: 'NotoSansCJKkr-Medium';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans Medium'), local('NotoSans-Medium'), url(/NotoSans-Lighter.eot);
+  src: url(/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
+  url(/NotoSans-Medium.woff2) format('woff2'),
+  url(/NotoSans-Medium.woff) format('woff');
+}
+
+/*****************antd 메뉴********************/
+
+/* @media all and (max-width: 800px) {
+  .ant-menu {
+    border-top: 2px solid #00aab6;
+    border-bottom: 0px solid #00aab6;
+  }
+}
+@media all and (min-width: 800px) {
+  .ant-menu {
+    font-family: "Nanum Gothic"!important;
+    font-weight: "bold"!important;
+    font-size: 16px!important;
+    color: #000000!important;
+    background-color: transparent!important;
+  }
+  .ant-menu-item > a {
+    color: #000000!important;
+  }
+  .ant-menu-item > a:hover {
+    color: #00aab6!important;
+  }
+  .ant-menu-submenu-title:hover {
+    color: #00aab6!important;
+  }
+  .ant-menu-item-selected {
+    color: #00aab6!important;
+  }
+  .ant-menu-item-selected > a,
+  .ant-menu-item-selected > a:hover {
+    color: #00aab6!important;
+  }
+  .ant-menu-item:active,
+  .ant-menu-submenu-title:active {
+    background: transparent!important;
+  }
+  
+  .ant-menu-horizontal > .ant-menu-item:hover,
+  .ant-menu-horizontal > .ant-menu-submenu:hover,
+  .ant-menu-horizontal > .ant-menu-item-active,
+  .ant-menu-horizontal > .ant-menu-submenu-active,
+  .ant-menu-horizontal > .ant-menu-item-open,
+  .ant-menu-horizontal > .ant-menu-submenu-open,
+  .ant-menu-horizontal > .ant-menu-item-selected,
+  .ant-menu-horizontal > .ant-menu-submenu-selected {
+    border-bottom: 5px solid #00aab6!important;
+    color: #00aab6!important;
+  }
+  
+  .ant-menu-submenu-popup {
+    color: #000000!important;
+    background-color: #090e2c!important;
+  }
+  
+  .ant-menu-horizontal {
+    border-bottom: 5px solid transparent!important;
+  }
+  .ant-menu-horizontal > .ant-menu-item,
+  .ant-menu-horizontal > .ant-menu-submenu {
+    border-bottom: 5px solid transparent;
+  }
+}
+@media all and (max-width: 1000px) {
+  .ant-menu-item {
+    margin-right: 30px;
+  }
+}
+@media all and (min-width: 1000px) {
+  .ant-menu-item {
+    margin-right: 80px; 
+  }
+} */
+
+.ant-menu {
+  border-bottom: 1px solid #fff!important;
+}
+.full-menu {
+}
+.burger-menu {
+  display: none;
+}
+.burger-menu-button {
+  display: none;
+}
+@media all and (max-width: 480px) {
+  .full-menu {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    border: 1px solid #e1e1e1
+  }
+  .burger-menu-button {
+    display: block;
+  }
+}
+.mid-menu {
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  padding: 20px;
+  margin: 0px 60px;
+  border-bottom: 2px solid #000;
+  cursor: pointer;
+}
+.mid-menu:hover {
+  border-bottom: 2px solid #1890ff;
+}
+@media all and (max-width: 480px) {
+  .mid-menu-wrapper {
+    display: none;
+  }
+}
+/*****************공통********************/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+div {
+  font-family: "NotoSansKr-Light";
+}
+.container {
+  width: 100%;
+  text-align: center;
+}
+
+.global-wrapper {
+  width: 100%;
+  text-align: center;
+}
+.global-container {
+  display: inline-block;
+  width: 100%;
+  max-width: 1800px;
+} 
+@media all and (max-width: 480px) {
+  .modal-wrapper {
+    width: 300px;
+  }
+}
+@media all and (min-width: 480px) {
+  .modal-wrapper {
+    width: 500px;
+  }
+}
+.ant-table-expand-icon-th,
+.ant-table-row-expand-icon-cell{
+  display: none!important;
+  visibility: hidden;
+  position: absolute;
+}
+.center-background {
+  min-width: 1200px; 
+  background-position: center 0px;
+  background-repeat: no-repeat;
+}
+@media all and (max-width: 480px) {
+  .center-background {
+    min-width: 360px;
+    background-position: center 0px;
+    background-repeat: no-repeat;
+  }
+}
+/**************문의***************/
+.contact-content {
+  margin-top: 15px!important;
+  margin-bottom: 0px!important;
+}
+.contact-name {
+  float: left;
+  margin-bottom: 0px!important;
+  width: 49%;
+}
+.contact-company {
+  float:right;
+  margin-bottom: 0px!important;
+  width: 49%;
+}
+.contact-tel {
+  float: left;
+  margin-bottom: 0px!important;
+  width: 49%;
+  
+}
+.contact-email {
+  float:right;
+  margin-bottom: 0px!important;
+  width: 49%;
+}
+.ant-pagination {
+  float: none!important;
+  display: inline-block!important;
+}
+/*****************메인********************/
+
+.main_contact {
+  max-width: 1800px;
+  height: 1165px;
+  background-position: center 0px;
+}
+
+.main_contents {
+  width: 1800px;
+  display: inline-block;
+}
+.main_title {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 40px;
+  color: #fff;
+  padding-top: 260px;
+}
+.main_subtitle {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 65px;
+  font-weight: bold;
+  color: #fff;
+}
+.mainsec1_1 {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 35px;
+  font-weight: bold;
+  padding-top: 340px;
+  color: #000;
+}
+.mainsec1_2 {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 17px;
+  color: #000;
+  padding-top: 8px;
+}
+.mainsec1_3 {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 17px;
+  color: #000;
+}
+.mainsec2_1 {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 35px;
+  font-weight: bold;
+  padding-top: 180px;
+  color: #fff;
+}
+.mainsec2_2 {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 17px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 20px;
+  line-height: 2;
+}
+.mainsec2_2_1 {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 17px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 3px;
+}
+.mainsec2_3 {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 33px;
+  font-weight: bold;
+  color: #000;
+  padding-top: 300px;
+}
+.mainsec2_business_box {
+  /* padding: 0px 250px 120px 250px; */
+  text-align: center;
+}
+.mainsec2_4{
+  display: inline-block;
+  width: 1200px;
+  padding-top: 50px;
+}
+.mainsec2_4_title {
+  font-family: "NotoSans-Medium";
+  letter-spacing: -1px;
+  font-size: 26px;
+  color: #000;
+  font-weight: bold;
+  text-align: left;
+  display: inline-block;
+  float: left;
+  width: 35%;
+  padding-top: 60px;
+  padding-left: 20px;
+  flex: 2;
+}
+.mainsec2_4_subtitle {
+  font-family: "NotoSansKr-Light";
+  letter-spacing: -1px;
+  font-size: 18px;
+  font-weight: 100;
+  color: #000;
+  text-align: left;
+  padding-top: 13px;
+}
+.mainsec2_4_img {
+  display: inline-block;
+  float: right;
+  width: 65%;
+  flex: 3;
+}
+.mainsec2_5{
+  display: inline-block;
+  width: 1200px;
+  padding-top: 50px;
+}
+.mainsec2_5_img {
+  display: inline-block;
+  float: left;
+  width: 65%;
+  /* text-align: left; */
+  flex: 3;
+}
+.mainsec2_5_title {
+  font-family: "NotoSans-Medium";
+  letter-spacing: -1px;
+  font-size: 26px;
+  color: #000;
+  font-weight: bold;
+  text-align: left;
+  display: inline-block;
+  float: right;
+  width: 35%;
+  padding-top: 60px;
+  flex: 2;
+}
+.mainsec2_5_subtitle {
+  font-family: "NotoSansKr-Light";
+  letter-spacing: -1px;
+  font-size: 18px;
+  font-weight: 100;
+  color: #000;
+  text-align: left;
+  padding-top: 13px;
+}
+.mainsec3 {
+  font-family: "NotoSansCJKkr-Medium";
+  font-weight: bold;
+  font-size: 36px;
+  color: #fff;
+  padding-top: 80px;
+}
+.mainsec3_title {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 27px;
+  color: #fff;
+  padding-top: 70px;
+}
+.mainsec3_subtitle {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 18px;
+  color: #fff;
+  padding-top: 20px;
+}
+.mainsec3_blockchain {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 32px;
+  font-weight: bold;
+  color: #000;
+  padding-top: 160px;
+}
+.mainsec3_con {
+  padding-top: 80px;
+}
+.mainsec3_con_pure {
+  display: flex;
+}
+.mainsec3_con_pure_img {
+  flex: 3;
+}
+.mainsec3_con_pure_text {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 25px;
+  font-weight: bold;
+  color: #000;
+  flex: 7;
+  text-align: left;
+}
+.mainsec3_pure_text1 {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  width: 85%;
+  padding-top: 20px;
+}
+.mainsec3_con_speed {
+  display: flex;
+  padding-top: 80px;
+}
+.mainsec3_con_speed_img {
+  flex: 3;
+}
+.mainsec3_con_speed_text {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 25px;
+  font-weight: bold;
+  color: #000;
+  flex: 7;
+  text-align: left;
+}
+.mainsec3_speed_text1 {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  width: 85%;
+  padding-top: 20px;
+}
+.mainsec3_con_security {
+  display: flex;
+  padding-top: 80px;
+}
+.mainsec3_con_security_img {
+  flex: 3;
+}
+.mainsec3_con_security_text {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 25px;
+  font-weight: bold;
+  color: #000;
+  text-align: left;
+  flex: 7;
+}
+.mainsec3_security_text1 {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  width: 85%;
+  padding-top: 20px;
+}
+.mainsec4_title {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 35px;
+  font-weight: bold;
+  color: #000;
+  padding-top: 50px;
+}
+.mainsec4_con {
+  padding-top: 40px;
+  text-align: center;
+  /* padding: 90px 250px 120px 250px; */
+  display: inline-block
+}
+.mainsec4_box {
+  display: flex;
+  width: 1200px;
+  align-content: center;
+}
+.mainsec4_subcon1 {
+  background-repeat: no-repeat;
+  height: 700px;
+  flex: 4.9;
+}
+.mainsec4_subcon1_text1 {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 25px;
+  color: #fff;
+  text-align: left;
+  padding-top: 300px;
+  padding-left: 30px;
+}
+.mainsec4_subcon1_text2 {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  line-height: 3;
+  text-align: left;
+  padding-top: 40px;
+}
+.mainsec4_subcon2 {
+  background-repeat: no-repeat;
+  height: 700px;
+  flex: 4.9;
+}
+.mainsec4_subcon2_text1 {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 25px;
+  color: #fff;
+  text-align: left;
+  padding-top: 300px;
+  padding-left: 30px;
+}
+.mainsec4_subcon2_text2 {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  line-height: 3;
+  text-align: left;
+  padding-top: 40px;
+}
+.contact_title {
+  font-size: 35px;
+  color: #fff;
+  font-weight: bold;
+}
+.contact_subtitle {
+  font-size: 17px;
+  color: #fff;
+  padding-top: 15px;
+}
+
+@media all and (max-width: 480px) {
+  .main_contact {
+    max-width: 1800px;
+    height: 1165px;
+    background-position: center 0px;
+  }
+  
+  .main_contents {
+    width: 1800px;
+    display: inline-block;
+  }
+  .main_title {
+    font-family: "NotoSansCJKkr-Medium";
+    font-size: 25px;
+    color: #fff;
+    padding-top: 110px;
+  }
+  .main_subtitle {
+    font-family: "NotoSansCJKkr-Medium";
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .mainsec1_1 {
+    font-family: "Noto Sans Kr Light";
+    font-size: 28px;
+    font-weight: 800;
+    padding-top: 180px;
+    color: #000;
+  }
+  .mainsec1_2 {
+    font-family: "NotoSansCJKkr-Medium";
+    font-size: 14.5px;
+    color: #000;
+    line-height: 2;
+    padding-top : 20px;
+  }
+  .mainsec2_1 {
+    font-family: "Noto Sans Kr Light";
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 40px;
+    color: #fff;
+  }
+  .mainsec2_2 {
+    font-family: "NotoSansCJKkr-Medium";
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    padding-top: 20px;
+  }
+  .mainsec2_3 {
+    font-family: "Noto Sans Kr Light";
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    padding-top: 80px;
+  }
+  .m_mainsec2_4_title {
+    font-family: "NotoSansCJKkr-Medium";
+    letter-spacing: -1px;
+    font-size: 22px;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 18px;
+  }
+  .mainsec2_4_subtitle {
+    font-family: "NotoSansCJKkr-Medium";
+    letter-spacing: -1px;
+    font-size: 14.5px;
+    color: #000;
+    text-align: center;
+    padding-top: 13px;
+  }
+  .m_mainsec2_4_img {
+    text-align: center;
+    padding-top: 25px;
+  }
+  .m_mainsec2_5_img {
+    text-align: center;
+    padding-top: 20px;
+  }
+  .m_mainsec2_5_title {
+    font-family: "NotoSansCJKkr-Medium";
+    letter-spacing: -1px;
+    font-size: 22px;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .mainsec2_5_subtitle {
+    font-family: "NotoSansCJKkr-Medium";
+    letter-spacing: -1px;
+    font-size: 14.5px;
+    color: #000;
+    text-align: center;
+    padding-top: 13px;
+  }
+  .mainsec3 {
+    font-family: "NotoSansCJKkr-Medium";
+    font-weight: bold;
+    font-size: 32px;
+    color: #fff;
+    padding-top: 80px;
+  }
+  .mainsec3_title {
+    font-family: "Noto Sans Kr Light";
+    font-size: 23px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 8px;
+  }
+  .mainsec3_subtitle {
+    font-family: "NotoSansCJKkr-Medium";
+    font-size: 13.5px;
+    color: #fff;
+    line-height: 2.5;
+    padding-top: 42px;
+  }
+  .mainsec3_blockchain {
+    font-family: "Noto Sans Kr Light";
+    font-size: 29px;
+    font-weight: bold;
+    color: #000;
+    padding-top: 130px;
+  }
+  .m_mainsec3_con_pure_img {
+    padding-top: 40px;
+  }
+  .m_mainsec3_con_pure_text {
+    font-family: "Noto Sans Kr Light";
+    font-size: 25px;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .m_mainsec3_text1 {
+    font-family: "NotoSansCJKkr-Medium";
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    line-height: 2;
+    padding-top: 20px;
+  }
+  .m_mainsec3_con_speed_img {
+    padding-top: 50px;
+  }
+  .m_mainsec3_con_speed_text {
+    font-family: "Noto Sans Kr Light";
+    font-size: 25px;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .m_mainsec3_con_security_img {
+    padding-top: 50px;
+  }
+  .m_mainsec3_con_security_text {
+    font-family: "Noto Sans Kr Light";
+    font-size: 25px;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .mainsec4_title {
+    font-family: "NotoSansCJKkr-Medium";
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    padding-top: 50px;
+  }
+  .m_mainsec4_subcon1 {
+    height: 410px;
+    margin-left: 0px;
+    margin-top: 30px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background:url(./img/m_global1.png) no-repeat center top;
+  }
+  .m_mainsec4_subcon1_text1 {
+    font-family: "NotoSansCJKkr-Medium";
+    font-size: 22px;
+    color: #fff;
+    text-align: left;
+    padding-top: 170px;
+    padding-left: 50px;
+  }
+  .m_mainsec4_subcon1_text2 {
+    font-family: "NotoSansCJKkr-Medium";
+    font-size: 14px;
+    color: #000;
+    font-weight: 500;
+    line-height: 2;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 30px;
+  }
+  .m_mainsec4_subcon2 {
+    height: 410px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background:url(./img/m_global1.png) no-repeat center top;
+    
+  }
+  .m_mainsec4_subcon2_text1 {
+    font-family: "NotoSansCJKkr-Medium";
+    font-size: 22px;
+    color: #fff;
+    text-align: left;
+    padding-top: 160px;
+    padding-left: 50px;
+  }
+  .m_mainsec4_subcon2_text2 {
+    font-family: "NotoSansCJKkr-Medium";
+    font-size: 14px;
+    color: #000;
+    font-weight: 500;
+    line-height: 2;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 30px;
+  }
+  .contact_title {
+    font-size: 27px;
+    color: #fff;
+    font-weight: bold;
+    padding-top: 80px;
+  }
+  .contact_subtitle {
+    font-size: 15px;
+    color: #fff;
+    padding-top: 30px;
+    letter-spacing: -3;
+  }
+}
+
+/*********************** 오퍼링 *******************************/
+.offer_title {
+  font-family: "Noto Sans Kr Light";
+  font-size: 55px;
+  font-weight: bold;
+  padding-top: 100px;
+  color: #fff;
+}
+.offer_subtitle {
+  font-size: 28px;
+  color: #fff;
+}
+.offer_title_1 {
+  font-family: "Noto Sans Kr Light";
+  font-size: 34px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 160px;
+}
+.offer_subtitle_1 {
+  font-family: "Noto Sans Kr Light";
+  font-size: 19px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 60px;
+}
+.offer_hotel_title {
+  font-size: 37px;
+  font-weight: bold;
+  color: #000;
+}
+.offer_hotel_subtitle {
+  font-size: 25px;
+  font-weight: bold;
+  color: #000;
+  padding-top: 5px;
+}
+.offer_hotel_box {
+  display: inline-block;
+  text-align: center;
+  /* padding-top: 60px; */
+}
+.offer_hotel_con {
+  width: 1200px;
+  display: flex;
+  padding-top: 50px;
+}
+.offer_hotel_operation_text {
+  text-align: left;
+  padding-top: 30px;
+  flex: 2;
+}
+.offer_hotel_operation_img {
+  flex: 3;
+}
+.offer_hotel_sales_img {
+  flex: 3;
+}
+.offer_hotel_sales_text{
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 30px;
+  flex: 2;
+}
+.offer_hotel_marketing_text {
+  text-align: left;
+  padding-top: 30px;
+  flex: 2;
+}
+.offer_hotel_marketing_img {
+  flex: 3;
+}
+.offer_hotel_edu_img {
+  flex: 3;
+}
+.offer_hotel_edu_text {
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 30px;
+  flex: 2;
+}
+.offer_hotel_coin_text {
+  text-align: left;
+  padding-top: 30px;
+  flex: 2;
+}
+.offer_hotel_coin_img {
+  flex: 3;
+}
+
+.offer_hotel_text_1 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #000;
+}
+.offer_hotel_text_2 {
+  font-size: 16px;
+  padding-top: 10px;
+  color: #000;
+}
+.offer_medi {
+  width: 1200px;
+  display: inline-block;
+}
+.offer_medi_box {
+  text-align: center;
+}
+.offer_medi_title {
+  font-size: 35px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 70px;
+}
+.offer_medi_1 {
+  font-size: 18px;
+  text-align: left;
+  color: #fff;
+  padding-top: 50px;
+}
+.offer_medi_con_1 {
+  font-size: 21px;
+  color: #fff;
+  text-align: left;
+  padding-top: 15px;
+}
+.offer_medi_2 {
+  font-size: 18px;
+  text-align: left;
+  color: #fff;
+  padding-top: 50px;
+}
+.offer_medi_con_2 {
+  font-size: 21px;
+  color: #fff;
+  text-align: left;
+  padding-top: 15px;
+}
+.offer_medi_3 {
+  font-size: 18px;
+  text-align: left;
+  color: #fff;
+  padding-top: 80px;
+}
+.offer_medi_con_3 {
+  font-size: 21px;
+  color: #fff;
+  text-align: left;
+  padding-top: 15px;
+}
+.offer_medi_4 {
+  font-size: 18px;
+  text-align: left;
+  color: #fff;
+  padding-top: 80px;
+}
+.offer_medi_con_4 {
+  font-size: 21px;
+  color: #fff;
+  text-align: left;
+  padding-top: 1px;
+}
+.offer_medi_5 {
+  font-size: 18px;
+  text-align: left;
+  color: #fff;
+  padding-top: 70px;
+}
+.offer_medi_con_5 {
+  font-size: 21px;
+  color: #fff;
+  text-align: left;
+  padding-top: 15px;
+}
+.offer_ecom_title {
+  font-size: 35px;
+  font-weight: bold;
+  color: #000;
+  padding-top: 50px;
+}
+.offer_ecom_subtitle {
+  font-size: 25px;
+  font-weight: bold;
+  color: #000;
+  padding-top: 55px;
+}
+.offer_ecom_subtitle_1 {
+  font-size: 18px;
+  color: #000;
+  line-height: 2;
+  padding-top: 25px;
+}
+.offer_ecom_box {
+  text-align: center;
+}
+.offer_ecom_relation {
+  width: 1200px;
+  display: inline-block;
+}
+.offer_ecom_ecom {
+  font-family: "Noto Sans Kr Light";
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 285px;
+}
+.offer_ecom_sidedes_left_1 {
+  font-size: 23px;
+  color: #fff;
+  padding-top: 25px;
+}
+.offer_ecom_sidedes_right_1 {
+  font-size: 23px;
+  color: #fff;
+  padding-top: 25px;
+}
+.offer_ecom_sidedes_left_2 {
+  font-family: "Noto Sans Kr Light";
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 120px;
+  padding-left: 190px;
+}
+.offer_ecom_sidedes_right_2 {
+  font-family: "Noto Sans Kr Light";
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 120px;
+  padding-right: 190px;
+}
+.offer_ecom_des {
+  font-size: 23px;
+  color: #fff;
+  padding-top: 37px;
+}
+.offer_offer_partner {
+  font-family: "Noto Sans Kr Light";
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 320px;
+}
+
+@media all and (max-width: 480px) {
+  .offer_title {
+    font-family: "NotoSansKr-Light";
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 80px;
+    color: #fff;
+  }
+  .offer_subtitle {
+    font-family: "NotoSansKr-Light";
+    font-size: 18px;
+    color: #fff;
+    line-height: 2;
+    padding-top: 30px;
+  }
+  .offer_title_1 {
+    font-family: "NotoSansKr-Light";
+    font-size: 34px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 130px;
+  }
+  .offer_subtitle_1 {
+    font-family: "NotoSansKr-Light";
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 40px;
+  }
+  .offer_hotel_title {
+    font-family: "NotoSansKr-Light";
+    font-size: 25px;
+    font-weight: bold;
+    color: #000;
+    padding-top: 50px;
+  }
+  .offer_hotel_subtitle {
+    font-family: "NotoSansKr-Light";
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    padding-top: 10px;
+  }
+  .offer_hotel_operation_text {
+    text-align: left;
+    padding-top: 30px;
+    flex: 2;
+  }
+  .offer_hotel_operation_img {
+    flex: 3;
+  }
+  .offer_hotel_sales_img {
+    flex: 3;
+  }
+  .offer_hotel_sales_text{
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 30px;
+    flex: 2;
+  }
+  .offer_hotel_marketing_text {
+    text-align: left;
+    padding-top: 30px;
+    flex: 2;
+  }
+  .offer_hotel_marketing_img {
+    flex: 3;
+  }
+  .offer_hotel_edu_img {
+    flex: 3;
+  }
+  .offer_hotel_edu_text {
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 30px;
+    flex: 2;
+  }
+  .offer_hotel_coin_text {
+    text-align: left;
+    padding-top: 30px;
+    flex: 2;
+  }
+  .offer_hotel_coin_img {
+    flex: 3;
+  }
+  .offer_hotle_img {
+    padding-top: 35px;
+  }
+  .offer_hotel_text_1 {
+    font-family: "NotoSansKr-Light";
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    padding-top: 25px;
+  }
+  .offer_hotel_text_2 {
+    font-family: "NotoSansKr-Light";
+    font-size: 15px;
+    color: #000;
+    line-height: 2;
+    padding-top: 20px;
+  }
+  .offer_medi_title {
+    font-family: "NotoSansKr-Light";
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 60px;
+  }
+  .m_offer_medi_1 {
+    font-family: "NotoSansKr-Light";
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 40px;
+  }
+  .m_offer_medi_con_1 {
+    font-family: "NotoSansKr-Light";
+    font-size: 13px;
+    color: #fff;
+    line-height: 2;
+    padding-top: 15px;
+  }
+  .m_offer_medi_2 {
+    font-family: "NotoSansKr-Light";
+    font-size: 16px;
+    color: #fff;
+    padding-top: 55px;
+  }
+  .m_offer_medi_con_2 {
+    font-family: "NotoSansKr-Light";
+    font-size: 13px;
+    color: #fff;
+    line-height: 2;
+    padding-top: 15px;
+  }
+  .m_offer_medi_3 {
+    font-family: "NotoSansKr-Light";
+    font-size: 16px;
+    color: #fff;
+    padding-top: 55px;
+  }
+  .m_offer_medi_con_3 {
+    font-family: "NotoSansKr-Light";
+    font-size: 13px;
+    color: #fff;
+    line-height: 2;
+    padding-top: 15px;
+  }
+  .m_offer_medi_4 {
+    font-family: "NotoSansKr-Light";
+    font-size: 16px;
+    color: #fff;
+    padding-top: 55px;
+  }
+  .m_offer_medi_con_4 {
+    font-family: "NotoSansKr-Light";
+    font-size: 13px;
+    color: #fff;
+    line-height: 2;
+    padding-top: 15px;
+  }
+  .m_offer_medi_5 {
+    font-family: "NotoSansKr-Light";
+    font-size: 16px;
+    color: #fff;
+    padding-top: 55px;
+  }
+  .m_offer_medi_con_5 {
+    font-family: "NotoSansKr-Light";
+    font-size: 13px;
+    color: #fff;
+    line-height: 2;
+    padding-top: 15px;
+  }
+  .offer_ecom_title {
+    font-family: "NotoSansKr-Light";
+    font-size: 25px;
+    font-weight: bold;
+    color: #000;
+    padding-top: 50px;
+  }
+  .offer_ecom_subtitle {
+    font-family: "Noto Sans Kr Light";
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    padding-top: 28px;
+  }
+  .offer_ecom_subtitle_1 {
+    font-family: "NotoSansKr-Light";
+    font-size: 15px;
+    color: #000;
+    line-height: 2;
+    padding-top: 25px;
+    padding-bottom: 31px;
+  }
+  .relation_img {
+    background-position: center 0px;
+    background-repeat: no-repeat;
+  }
+  .offer_ecom_box {
+    text-align: -webkit-center;
+  }
+  .offer_ecom_ecom {
+    font-family: "Noto Sans Kr Light";
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 105px;
+    padding-right: 11px;
+  }
+  .offer_ecom_sidedes_left_1 {
+    font-size: 13px;
+    color: #fff;
+    padding-top: 0px;
+    padding-right: 140px;
+
+  }
+  .offer_ecom_sidedes_right_1 {
+    font-size: 13px;
+    color: #fff;
+    padding-top: 0px;
+  }
+  /* .m_offer_ecom_sidedes_1 {
+    display: inline-block;
+    width: 150px;
+    margin: 30px;
+  } */
+  .offer_ecom_sidedes_left_2 {
+    display: inline-block;
+    width: 110px;
+    margin-right : 68px;
+    font-family: "Noto Sans Kr Light";
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 10px;
+    padding-left: 0px;
+  }
+  .offer_ecom_sidedes_right_2 {
+    display: inline-block;
+    width: 110px;
+    margin-left: 0px;
+    font-family: "Noto Sans Kr Light";
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 17px;
+    padding-right: 0px;
+  }
+  .offer_ecom_des {
+    font-size: 13px;
+    color: #fff;
+    padding-top: 10px;
+  }
+  .offer_offer_partner {
+    font-family: "Noto Sans Kr Light";
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 110px;
+  }
+}
+
+/*********************** 코인 *******************************/
+.coin_title {
+  font-family: "Noto Sans Kr Light";
+  font-size: 55px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 100px;
+}
+.coin_subtitle {
+  font-family: "Noto Sans Kr Light";
+  font-size: 25px;
+  color: #fff;
+  padding-top: 10px;
+}
+.coin_about {
+  
+  font-size: 35px;
+  font-weight: bold;
+  color: #000;
+  padding-top: 50px;
+}
+.coin_about_box {
+  display: flex;
+  padding-top: 50px;
+}
+.coin_about_img {
+  flex: 4;
+}
+.coin_about_text {
+  font-size: 16px;
+  color: #000;
+  flex: 3;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.coin_roadmap {
+  font-size: 35px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 160px;
+}
+.coin_roadmap_con {
+  display: inline-block;
+  text-align: center;
+}
+.coin_roadmap_box {
+  width: 1200px;
+  display: flex;
+}
+.coin_roadmap_up_1_1 {
+  font-size: 17px;
+  color: #fff;
+  padding-top: 210px;
+  padding-left: 50px;
+}
+.coin_roadmap_up_1_2 {
+  font-size: 23px;
+  font-weight: bold;
+  color: #69d1ff;
+  padding-left: 50px;
+}
+.coin_roadmap_up_2_1 {
+  font-size: 17px;
+  color: #fff;
+  padding-top: 190px;
+  padding-left: 55px;
+}
+.coin_roadmap_up_2_2 {
+  font-size: 23px;
+  font-weight: bold;
+  color: #69d1ff;
+  padding-left: 55px;
+}
+.coin_roadmap_up_3_1 {
+  font-size: 17px;
+  color: #fff;
+  padding-top: 210px;
+  padding-left: 68px;
+}
+.coin_roadmap_up_3_2 {
+  font-size: 23px;
+  font-weight: bold;
+  color: #69d1ff;
+  padding-left: 68px;
+}
+.coin_roadmap_down_1_1 {
+  font-size: 23px;
+  font-weight: bold;
+  color: #69d1ff;
+  padding-top: 50px;
+  padding-left: 240px;
+}
+.coin_roadmap_down_1_2 {
+  font-size: 17px;
+  color: #fff;
+  padding-left: 240px; 
+}
+.coin_roadmap_down_2_1 {
+  font-size: 23px;
+  font-weight: bold;
+  color: #69d1ff;
+  padding-top: 50px;
+  padding-right: 115px;
+}
+.coin_roadmap_down_2_2 {
+  font-size: 17px;
+  color: #fff;
+  padding-right: 115px; 
+}
+.coin_roadmap_up_1 {
+  flex: 1;
+}
+.coin_roadmap_up_2 {
+  flex: 1;
+}
+.coin_roadmap_up_3 {
+  flex: 1;
+}
+.coin_roadmap_down_1 {
+  flex: 1;
+}
+.coin_roadmap_down_2 {
+  flex: 1;
+}
+.coin_whitepaper {
+  font-size: 35px;
+  color: #000;
+  font-weight: bold;
+  padding-top: 20px;
+}
+.coin_partner {
+  font-family: "Noto Sans Kr Light";
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 780px;
+}
+
+@media all and (max-width: 480px) {
+  .coin_title {
+    font-family: "Noto Sans Kr Light";
+    font-size: 33px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 70px;
+  }
+  .coin_subtitle {
+    font-family: "Noto Sans Kr Light";
+    font-size: 20px;
+    color: #fff;
+    padding-top: 20px;
+  }
+  .m_coin_about {
+    font-family: "Noto Sans Kr Light";
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    padding-top: 50px;
+  }
+  .m_coin_about_img {
+    padding-top: 30px;
+  }
+  .m_coin_about_text {
+    font-size: 14px;
+    color: #000;
+    line-height: 2;
+    padding-top: 30px;
+  }
+  .coin_roadmap {
+    font-family: "Noto Sans Kr Light";
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 85px;
+  }
+  .m_coin_roadmap_con {
+    text-align: -webkit-center;
+  }
+  .m_coin_roadmap_box {
+    width: 380px;
+    display: flex;
+  }
+  .coin_roadmap_left_date_1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #69d1ff;
+    padding-top: 437px;
+    padding-right: 30px;
+    text-align: right;
+  }
+  .coin_roadmap_left_con_1 {
+    font-size: 12px;
+    color: #fff;
+    padding-top: 10px;
+    padding-right: 20px;
+    text-align: right;
+  }
+  .coin_roadmap_left_date_2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #69d1ff;
+    padding-top: 70px;
+    padding-right: 90px;
+  }
+  .coin_roadmap_left_con_2 {
+    font-size: 12px;
+    color: #fff;
+    padding-top: 110px;
+    padding-right: 20px;
+    text-align: right;
+  }
+  .coin_roadmap_left_date_3{
+    font-size: 22px;
+    font-weight: bold;
+    color: #69d1ff;
+    padding-top: 205px;
+    padding-right: 30px;
+    text-align: right;
+  }
+  .coin_roadmap_left_con_3 {
+    font-size: 12px;
+    color: #fff;
+    padding-top: 10px;
+    padding-right: 20px;
+    text-align: right;
+  }
+  .coin_roadmap_right_date_1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #69d1ff;
+    padding-top: 220px;
+    padding-left: 20px;
+    text-align: left;
+  }
+  .coin_roadmap_right_con_1 {
+    font-size: 12px;
+    color: #fff;
+    padding-top: 10px;
+    padding-left: 20px;
+    text-align: left;
+  }
+  .coin_roadmap_right_date_2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #69d1ff;
+    padding-top: 523px;
+    padding-left: 20px;
+    text-align: left;
+  }
+  .coin_roadmap_right_con_2 {
+    font-size: 12px;
+    color: #fff;
+    padding-top: 10px;
+    padding-left: 20px;
+    text-align: left;
+  }
+  .coin_roadmap_left {
+    flex: 1;
+  }
+  .coin_roadmap_right {
+    flex: 1;
+  }
+  .coin_whitepaper {
+    font-size: 30px;
+    color: #000;
+    /* font-weight: bold; */
+    padding-top: 30px;
+  }
+  .m_coin_partner {
+    font-family: "Noto Sans Kr Light";
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 500px;
+  }
+}
+/*********************** 회사정보 *******************************/
+.company_title {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 115px;
+}
+.company_subtitle {
+  font-family: "NotoSansKr-Light";
+  font-size: 25px;
+  color: #fff;
+  padding-top: 20px;
+}
+.company_intro {
+  font-family: "NotoSansKr-Light";
+  font-size: 35px;
+  font-weight: bold;
+  color: #000;
+  padding-top: 80px;
+}
+.company_intro_con {
+  font-family: "NotoSansKr-Light";
+  font-size: 16px;
+  color: #000;
+  letter-spacing: -1;
+  padding-top: 30px;
+}
+.company_intro_con_1 {
+  font-family: "NotoSansKr-Light";
+  font-size: 16px;
+  color: #fff;
+  padding-top: 155px;
+  line-height: 2.5;
+}
+.company_intro_con_2 {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 25px;
+  color: #fff;
+  padding-top: 50px;
+}
+.company_ceo {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 35px;
+  font-weight: bold;
+  color: #000;
+  padding-top: 50px;
+}
+.company_ceo_intro {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 28px;
+  color: #000;
+  padding-top: 5px;
+}
+.company_ceo_intro_con {
+  font-family: "NotoSansKr-Light";
+  font-size: 18px;
+  color: #000;
+  padding-top: 35px;
+  line-height: 2;
+}
+.company_ceo_box {
+  display: inline-block;
+  width: 910px;
+  padding-left: 40px;
+  text-align: center;
+}
+.company_cer_con {
+  padding-top: 40px;
+  padding-left: 300px;
+}
+.company_ceo_career {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 19px;
+  font-weight: bold;
+  color: #696969;
+  text-align: left;
+}
+.company_ceo_career_con {
+  font-family: "NotoSansKr-Light";
+  font-size: 15px;
+  font-weight: bold;
+  color: #646464;
+  text-align: left;
+  padding-top: 10px;
+  
+}
+.company_ceo_activity{
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 19px;
+  font-weight: bold;
+  color: #696969;
+  text-align: left;
+  padding-top: 40px;
+}
+.company_ceo_activity_con {
+  font-family: "NotoSansKr-Light";
+  font-size: 15px;
+  font-weight: bold;
+  color: #646464;
+  text-align: left;
+  padding-top: 10px;
+ 
+}
+.company_team {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 35px;
+  font-weight: bold;
+  color: #000;
+  padding-top: 50px;
+  text-align: center;
+}
+.company_team_member_con {
+  padding-top: 55px;
+}
+.company_team_member_con_1_name {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 27px;
+  color: #000;
+  padding-top: 20px;
+}
+.company_team_member_con_1_des {
+  font-family: "NotoSansKr-Light";
+  font-size: 15px;
+  font-weight: bold;
+  color: #525252;
+  padding-top: 10px;
+  line-height: 2;
+}
+.company_team_chart {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 35px;
+  font-weight: bold;
+  color: #000;
+  padding-top: 120px;
+  padding-bottom: 10px;
+}
+.company_team_chart_1 {
+  font-family: "NotoSansKr-Light";
+  font-size: 32px;
+  font-weight: bold;
+  padding-top: 78px;
+  color: #4567E2;
+}
+.company_team_chart_con {
+  width: 1200px;
+  display: inline-block;
+  text-align: center;
+}
+.company_team_chart_con_block {
+
+}
+.company_team_chart_box_block {
+  width: 200px;
+  display: inline-block;
+  width: 1200px;
+  margin: 30px;
+}
+.company_team_chart_left_1_1 {
+  font-family: "NotoSansKr-Light";
+  font-size: 32px;
+  font-weight: bold;
+  color: #4567E2;
+  padding-top: 132px;
+  padding-left: 65px;
+}
+.company_team_chart_left_1_2 {
+  font-family: "NotoSansKr-Light";
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 55px;
+  padding-left: 65px;
+}
+.company_team_chart_right_1_1 {
+  font-family: "NotoSansKr-Light";
+  font-size: 32px;
+  font-weight: bold;
+  color: #4567E2;
+  padding-top: 132px;
+  padding-right: 62px;
+}
+.company_team_chart_right_1_2 {
+  font-family: "NotoSansKr-Light";
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 55px;
+  padding-right: 62px;
+}
+.company_team_chart_center_1 {
+  width: 220px;
+  display: inline-block;
+  margin: 10px;
+  font-family: "NotoSansKr-Light";
+  font-size: 27px;
+  font-weight: bold;
+  color: #000;
+  padding-top: 82px;
+  padding-right: 47px
+}
+.company_team_chart_center_2 {
+  width: 220px;
+  display: inline-block;
+  margin: 10px;
+  font-family: "NotoSansKr-Light";
+  font-size: 27px;
+  font-weight: bold;
+  color: #000;
+  padding-top: 82px;
+  padding-right: 25px
+}
+.company_team_chart_center_3 {
+  width: 220px;
+  display: inline-block;
+  margin: 10px;
+  font-family: "NotoSansKr-Light";
+  font-size: 27px;
+  font-weight: bold;
+  color: #000;
+  padding-top: 82px;
+  padding-right: 7px
+}
+.company_team_chart_center_4 {
+  width: 220px;
+  display: inline-block;
+  margin: 10px;
+  font-family: "NotoSansKr-Light";
+  font-size: 27px;
+  font-weight: bold;
+  color: #000;
+  padding-top: 82px;
+  padding-left: 20px;
+}
+.company_team_chart_center_5 {
+  width: 220px;
+  display: inline-block;
+  margin: 10px;
+  font-family: "NotoSansKr-Light";
+  font-size: 27px;
+  font-weight: bold;
+  color: #000;
+  padding-top: 82px;
+  padding-left: 43px;
+}
+.company_team_chart_11 {
+  font-family: "NotoSansKr-Light";
+  font-size: 27px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 18px;
+}
+.company_team_chart_12 {
+  font-family: "NotoSansKr-Light";
+  font-size: 27px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 60px;
+}
+.company_team_chart_13 {
+  font-family: "NotoSansKr-Light";
+  font-size: 27px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 60px;
+}
+.company_team_chart_14 {
+  font-family: "NotoSansKr-Light";
+  font-size: 27px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 18px;
+  padding-left: 35px;
+}
+.company_team_chart_15 {
+  font-family: "NotoSansKr-Light";
+  font-size: 27px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 60px;
+  padding-left: 35px;
+}
+.company_team_chart_16 {
+  font-family: "NotoSansKr-Light";
+  font-size: 27px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 60px;
+  padding-left: 35px;
+}
+.company_fkasset {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 45px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 130px;
+  letter-spacing: 3;
+}
+.company_notice {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 30px;
+  font-weight: bold;
+  color:#000;
+}
+.company_partner {
+  font-family: "NotoSansCJKkr-Medium";
+  font-size: 30px;
+  font-weight: bold;
+  color:#000;
+}
+@media all and (max-width: 480px) {
+  .company_title {
+    font-family: "NotoSansCJKkr-Medium";
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 65px;
+  }
+  .company_subtitle {
+    font-family: "NotoSansKr-Light";
+    font-size: 18px;
+    color: #fff;
+    padding-top: 38px;
+  }
+  .company_intro {
+    font-family: "NotoSansKr-Light";
+    font-size: 26px;
+    font-weight: bold;
+    color: #000;
+    padding-top: 40px;
+  }
+  .company_intro_con {
+    font-family: "NotoSansKr-Light";
+    font-size: 14px;
+    color: #000;
+    letter-spacing: -1;
+    padding-top: 15px;
+    line-height: 2.3;
+  }
+  .company_intro_con_1 {
+    font-family: "NotoSansKr-Light";
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 60px;
+    line-height: 1.5;
+  }
+  .company_intro_con_2 {
+    font-family: "NotoSansCJKkr-Medium";
+    font-size: 18px;
+    color: #fff;
+    padding-top: 50px;
+  }
+  .company_ceo {
+    font-family: "NotoSansCJKkr-Medium";
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+    padding-top: 35px;
+  }
+  .company_ceo_intro {
+    font-family: "NotoSansCJKkr-Medium";
+    font-size: 23px;
+    color: #000;
+    padding-top: 5px;
+  }
+  .company_ceo_intro_con {
+    font-family: "NotoSansKr-Light";
+    font-size: 16px;
+    color: #000;
+    padding-top: 25px;
+    line-height: 1.6;
+  }
+  .company_ceo_box {
+    display: inline-block;
+    width: 340px;
+    padding-left: 40px;
+    text-align: center;
+  }
+  .company_cer_con {
+    padding-top: 50px;
+    padding-left: 80px;
+  }
+  .company_ceo_career {
+    font-family: "NotoSansCJKkr-Medium";
+    font-size: 14px;
+    font-weight: bold;
+    color: #696969;
+    text-align: left;
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+  }
+  .company_ceo_career_con {
+    font-family: "NotoSansKr-Light";
+    font-size: 7px;
+    font-weight: bold;
+    color: #646464;
+    text-align: left;
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+    /* text-shadow: #fff 0.2px 0.2px 0.2px; */
+    padding-top: 10px;
+    line-height: 2;
+  }
+  .company_ceo_activity{
+    font-family: "NotoSansCJKkr-Medium";
+    font-size: 14px;
+    font-weight: bold;
+    color: #696969;
+    text-align: left;
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+    padding-top: 20px;
+  }
+  .company_ceo_activity_con {
+    font-family: "NotoSansKr-Light";
+    font-size: 7px;
+    font-weight: bold;
+    color: #646464;
+    text-align: left;
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+    padding-top: 10px;
+    line-height: 2;
+  }
+  .company_team {
+    font-family: "NotoSansCJKkr-Medium";
+    font-size: 35px;
+    font-weight: bold;
+    color: #000;
+    padding-top: 60px;
+  }
+  .company_team_member_con {
+    padding-top: 22px;
+  }
+  .company_team_member_con_1 {
+    padding-top: 27px;
+  }
+  .company_team_member_con_1_name {
+    font-family: "NotoSansCJKkr-Medium";
+    font-size: 27px;
+    color: #000;
+    padding-top: 20px;
+  }
+  .m_company_team_member_con_1_name {
+    font-family: "NotoSansCJKkr-Medium";
+    font-size: 27px;
+    color: #000;
+    padding-top: 20px;
+  }
+  .company_team_member_con_1_des {
+    font-family: "NotoSansKr-Light";
+    font-size: 17px;
+    font-weight: bold;
+    color: #525252;
+    padding-top: 10px;
+    line-height: 2;
+  }
+  .company_team_chart {
+    font-family: "NotoSansCJKkr-Medium";
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    padding-top: 115px;
+  }
+  .company_team_chart_1 {
+    font-family: "NotoSansKr-Light";
+    font-size: 32px;
+    font-weight: bold;
+    padding-top: 70px;
+    color: #4567E2;
+  }
+  .company_team_chart_con {
+    width: 1200px;
+    display: inline-block;
+    text-align: center;
+  }
+  .company_team_chart_con_block {
+  
+  }
+  .company_team_chart_box_block {
+    width: 200px;
+    display: inline-block;
+    width: 1200px;
+    margin: 30px;
+  }
+  .company_team_chart_left_1_1 {
+    font-family: "NotoSansKr-Light";
+    font-size: 32px;
+    font-weight: bold;
+    color: #4567E2;
+    padding-top: 132px;
+    padding-left: 65px;
+  }
+  .company_team_chart_left_1_2 {
+    font-family: "NotoSansKr-Light";
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 55px;
+    padding-left: 65px;
+  }
+  .company_team_chart_right_1_1 {
+    font-family: "NotoSansKr-Light";
+    font-size: 32px;
+    font-weight: bold;
+    color: #4567E2;
+    padding-top: 132px;
+    padding-right: 62px;
+  }
+  .company_team_chart_right_1_2 {
+    font-family: "NotoSansKr-Light";
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 55px;
+    padding-right: 62px;
+  }
+  .company_team_chart_center_1 {
+    width: 220px;
+    display: inline-block;
+    margin: 10px;
+    font-family: "NotoSansKr-Light";
+    font-size: 27px;
+    font-weight: bold;
+    color: #000;
+    padding-top: 82px;
+    padding-right: 47px
+  }
+  .company_team_chart_center_2 {
+    width: 220px;
+    display: inline-block;
+    margin: 10px;
+    font-family: "NotoSansKr-Light";
+    font-size: 27px;
+    font-weight: bold;
+    color: #000;
+    padding-top: 82px;
+    padding-right: 25px
+  }
+  .company_team_chart_center_3 {
+    width: 220px;
+    display: inline-block;
+    margin: 10px;
+    font-family: "NotoSansKr-Light";
+    font-size: 27px;
+    font-weight: bold;
+    color: #000;
+    padding-top: 82px;
+    padding-right: 7px
+  }
+  .company_team_chart_center_4 {
+    width: 220px;
+    display: inline-block;
+    margin: 10px;
+    font-family: "NotoSansKr-Light";
+    font-size: 27px;
+    font-weight: bold;
+    color: #000;
+    padding-top: 82px;
+    padding-left: 20px;
+  }
+  .company_team_chart_center_5 {
+    width: 220px;
+    display: inline-block;
+    margin: 10px;
+    font-family: "NotoSansKr-Light";
+    font-size: 27px;
+    font-weight: bold;
+    color: #000;
+    padding-top: 82px;
+    padding-left: 43px;
+  }
+  .company_team_chart_11 {
+    font-family: "NotoSansKr-Light";
+    font-size: 27px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 18px;
+  }
+  .company_team_chart_12 {
+    font-family: "NotoSansKr-Light";
+    font-size: 27px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 60px;
+  }
+  .company_team_chart_13 {
+    font-family: "NotoSansKr-Light";
+    font-size: 27px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 60px;
+  }
+  .company_team_chart_14 {
+    font-family: "NotoSansKr-Light";
+    font-size: 27px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 18px;
+    padding-left: 35px;
+  }
+  .company_team_chart_15 {
+    font-family: "NotoSansKr-Light";
+    font-size: 27px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 60px;
+    padding-left: 35px;
+  }
+  .company_team_chart_16 {
+    font-family: "NotoSansKr-Light";
+    font-size: 27px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 60px;
+    padding-left: 35px;
+  }
+  .company_fkasset {
+    font-family: "NotoSansCJKkr-Medium";
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 45px;
+    letter-spacing: 3;
+  }
+  .company_notice {
+    font-family: "NotoSansCJKkr-Medium";
+    font-size: 30px;
+    font-weight: bold;
+    color:#000;
+  }
+  .company_partner {
+    font-family: "NotoSansCJKkr-Medium";
+    font-size: 30px;
+    font-weight: bold;
+    color:#000;
+  }
+}
+/*********************** 헤더 *******************************/
+.header-wrapper {
+  height: 85px;
+  padding: 0px 20px;
+} 
+.menu-language {
+  float:right;
+} 
+.menu-contact {
+  border-style: solid;
+  margin-top: 20px;
+  float:right;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #000;
+  padding: 8px 25px;
+  text-align: center;
+  cursor: pointer;
+} 
+.menu-contact:hover {
+  border-color: #1890ff;
+  color: #1890ff;
+} 
+@media all and (max-width: 480px) {
+  .menu-contact {
+    display: none;
+  }
+}
+
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.75)!important;
+  z-index: 1000;
+}
+
+/*********************** 푸터 *******************************/
+.footer{
+  text-align: left;
+  float: left;
+  padding-left: 50px;
+}
+.footer-text{
+  font-size: 14px;
+  color: #565656;
+  font-weight: bold;
+}
+.footerLogo{
+  float: left;
+}
+.footerSupport{
+  float: right;
+}
+.footer-blobs-info-text-1,
+.footer-blobs-info-text-2 {
+  text-align: left;
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 40px;
+  float: left;
+  color: #565656;
+}
+.footer-blobs-info-text-2 {
+  display: none;
+}
+@media all and (max-width: 480px) {
+  .footer-blobs-info-text-1 {
+    display: none;
+  }
+  .footer-blobs-info-text-2 {
+    display: block;
+    padding-left: 20px;
+  }
+}
+.footer-blobs-info-logo {
+  float: right;
+}
+
+.custom-filter-dropdown {
+  /* padding: 8px; */
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+}
+
+/* 미사용 */
+.custom-filter-dropdown input {
+  width: 130px;
+  margin-right: 8px;
+}
+
+.highlight {
+  color: #f50;
+}
+/*********************** 공지 *******************************/
+th.notice-idx,
+th.notice-title,
+th.notice-date,
+th.notice-mobile {
+  text-align: center!important;
+  font-size: 16px!important;
+  font-weight: bold!important;
+  background-color: #fff!important;
+  border-top: 2px #000 solid!important;
+}
+.notice-idx {
+  cursor: pointer!important;
+  text-align: center;
+  font-size: 16px!important;
+}
+.notice-title {
+  cursor: pointer!important;
+  font-size: 16px!important;
+}
+.notice-date {
+  cursor: pointer!important;
+  text-align: center;
+  font-size: 16px!important;
+}
+th.notice-mobile,
+.notice-mobile,
+th.notice-mobile-left,
+.notice-mobile-left {
+  display: none;
+}
+.notice-mobile {
+  cursor: pointer!important;
+}
+@media all and (max-width: 480px) {
+  th.notice-idx,
+  th.notice-title,
+  th.notice-date,
+  .notice-idx,
+  .notice-title,
+  .notice-date {
+    display: none;
+  }
+  th.notice-mobile-left,
+  .notice-mobile-left {
+    width: 1px!important;
+    padding: 0px!important;
+    margin: 0px!important;
+  }
+  th.notice-mobile-left,
+  .notice-mobile-left,
+  th.notice-mobile,
+  .notice-mobile {
+    display: table-cell;
+  }
+  .ant-table-expanded-row > td:first-child {
+    width: 1px!important;
+    padding: 0px!important;
+    margin: 0px!important;
+  }
+  .ant-table-expanded-row > td > div {
+    font-size: 14px!important;
+  }
+}
+/*********************** 홈 *******************************/
+.main_1 {
+  display: block;
+  }
+.main_mobile_1 {
+  display: none;
+}
+
+@media all and (max-width: 480px) {
+  .main_1 {
+    display: none;
+  }
+  .main_mobile_1 {
+    display: block;
+    }
+}
+.main_2 {
+  display: block;
+  }
+.main_mobile_2 {
+  display: none;
+}
+
+@media all and (max-width: 480px) {
+  .main_2 {
+    display: none;
+  }
+  .main_mobile_2 {
+    display: block;
+    }
+}
+.main_3 {
+  display: block;
+  }
+.main_mobile_3 {
+  display: none;
+}
+
+@media all and (max-width: 480px) {
+  .main_3 {
+    display: none;
+  }
+  .main_mobile_3 {
+    display: block;
+    }
+}
+.main_4 {
+  display: block;
+  }
+.main_mobile_4 {
+  display: none;
+}
+
+@media all and (max-width: 480px) {
+  .main_4 {
+    display: none;
+  }
+  .main_mobile_4 {
+    display: block;
+    }
+}
+
+/*********************** 오퍼링 *******************************/
+.offer_1 {
+  display: block;
+  }
+.mobile_offer_1 {
+  display: none;
+}
+
+@media all and (max-width: 480px) {
+  .offer_1 {
+    display: none;
+  }
+  .mobile_offer_1 {
+    display: block;
+    }
+}
+.offer_2 {
+  display: block;
+  }
+.mobile_offer_2 {
+  display: none;
+}
+
+@media all and (max-width: 480px) {
+  .offer_2 {
+    display: none;
+  }
+  .mobile_offer_2 {
+    display: block;
+    }
+}
+.offer_3 {
+  display: block;
+  }
+.mobile_offer_3 {
+  display: none;
+}
+
+@media all and (max-width: 480px) {
+  .offer_3 {
+    display: none;
+  }
+  .mobile_offer_3 {
+    display: block;
+    }
+}
+.offer_4 {
+  display: block;
+  }
+.mobile_offer_4 {
+  display: none;
+}
+
+@media all and (max-width: 480px) {
+  .offer_4 {
+    display: none;
+  }
+  .mobile_offer_4 {
+    display: block;
+    }
+}
+.offer_5 {
+  display: block;
+  }
+.mobile_offer_5 {
+  display: none;
+}
+
+@media all and (max-width: 480px) {
+  .offer_5 {
+    display: none;
+  }
+  .mobile_offer_5 {
+    display: block;
+    }
+}
+
+/*********************** 코인 *******************************/
+.coin_1 {
+  display: block;
+  }
+.mobile_coin_1 {
+  display: none;
+}
+
+@media all and (max-width: 480px) {
+  .coin_1 {
+    display: none;
+  }
+  .mobile_coin_1 {
+    display: block;
+    }
+}
+.coin_2 {
+  display: block;
+  }
+.mobile_coin_2 {
+  display: none;
+}
+
+@media all and (max-width: 480px) {
+  .coin_2 {
+    display: none;
+  }
+  .mobile_coin_2 {
+    display: block;
+    }
+}
+.coin_3 {
+  display: block;
+  }
+.mobile_coin_3 {
+  display: none;
+}
+
+@media all and (max-width: 480px) {
+  .coin_3 {
+    display: none;
+  }
+  .mobile_coin_3 {
+    display: block;
+    }
+}
+.coin_4 {
+  display: block;
+  }
+.mobile_coin_4 {
+  display: none;
+}
+
+@media all and (max-width: 480px) {
+  .coin_4 {
+    display: none;
+  }
+  .mobile_coin_4 {
+    display: block;
+    }
+}
+.coin_5 {
+  display: block;
+  }
+.mobile_coin_5 {
+  display: none;
+}
+
+@media all and (max-width: 480px) {
+  .coin_5 {
+    display: none;
+  }
+  .mobile_coin_5 {
+    display: block;
+    }
+}
+
+/*********************** 회사소개 *******************************/
+.com_1 {
+  display: block;
+  }
+.mobile_com_1 {
+  display: none;
+}
+
+@media all and (max-width: 480px) {
+  .com_1 {
+    display: none;
+  }
+  .mobile_com_1 {
+    display: block;
+    }
+}
+.com2 {
+  display: block;
+  }
+.mobile_com_2 {
+  display: none;
+}
+
+@media all and (max-width: 480px) {
+  .com_2 {
+    display: none;
+  }
+  .mobile_com_2 {
+    display: block;
+    }
+}
+.com_3 {
+  display: block;
+  }
+.mobile_com_3 {
+  display: none;
+}
+
+@media all and (max-width: 480px) {
+  .com_3 {
+    display: none;
+  }
+  .mobile_com_3 {
+    display: block;
+    }
+}
+.com_4 {
+  display: block;
+  }
+.mobile_com_4 {
+  display: none;
+}
+
+@media all and (max-width: 480px) {
+  .com_4 {
+    display: none;
+  }
+  .mobile_com_4 {
+    display: block;
+    }
+}
+.com_5 {
+  display: block;
+  }
+.mobile_com_5 {
+  display: none;
+}
+
+@media all and (max-width: 480px) {
+  .com_5 {
+    display: none;
+  }
+  .mobile_com_5 {
+    display: block;
+    }
+}
+.com_7 {
+  display: block;
+  }
+.mobile_com_7 {
+  display: none;
+}
+
+@media all and (max-width: 480px) {
+  .com_7 {
+    display: none;
+  }
+  .mobile_com_7 {
+    display: block;
+    }
+}
+
+.company_notice {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Noto Sans CJ Kkr';
+  color: #000;
+}
+
+@media all and (max-width: 480px) {
+  .company_notice {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Noto Sans CJ kkr';
+    color: #000;
+    padding: 30px;
+  }
+}

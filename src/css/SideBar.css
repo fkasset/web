@@ -1,0 +1,13 @@
+.logo {
+    height: 32px;
+    line-height: 32px;
+    background: #333;
+    border-radius: 6px;
+    margin: 16px;
+    text-align: center;
+}
+.logo span {
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 15px;
+}
